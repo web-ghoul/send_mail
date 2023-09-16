@@ -1,0 +1,123 @@
+/*Start Header*/
+.contain .logo, header .contain .booking ,.logs .contain .log{
+    border-bottom: 1px solid var(--gray);
+}
+
+button.primary, button.secondary {
+    font-size: 18px;
+}
+
+@media (max-width:992px) {
+    button.primary, button.secondary {
+        font-size: 16px;
+    }
+}
+@media (max-width:768px) {
+    button.primary, button.secondary {
+        font-size: 14px;
+    }
+}
+/*End Header*/
+/*Start Logs*/
+.log_info h5{
+    font-weight: normal;
+}
+.log_options div{
+    cursor: pointer;
+}
+/*End Logs*/
+
+
+/*Start Booking Form*/
+
+.booking_form .contain {
+    transform: translateX(-100%);
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    transition: var(--tran);
+    overflow: auto;
+}
+
+.booking_form .contain.active {
+    background-color: var(--white);
+    position: absolute;
+    transform: translateX(0);
+    top: 0;
+    right: 0;
+    transition: var(--tran);
+}
+
+.booking_form .contain .close_icon i {
+    color: var(--black);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.booking_form form input, .booking_form form select {
+    padding: 10px;
+    border: 2px solid var(--gray);
+    border-radius: 4px;
+    font-size: 18px
+}
+
+.booking_form form div label {
+    font-size: 18px
+}
+
+.booking_form form input::placeholder {
+    font-size: 16px;
+}
+
+@media(max-width:992px){
+    .booking_form .contain {
+        width: 75%;
+    }
+    
+    .booking_form .contain .close_icon i {
+        font-size: 18px;
+    }
+    
+    .booking_form form input, .booking_form form select {
+        padding: 8px;
+        border: 2px solid var(--gray);
+        border-radius: 3px;
+        font-size: 16px
+    }
+    
+    .booking_form form div label {
+        font-size: 16px
+    }
+    
+    .booking_form form input::placeholder {
+        font-size:14px;
+    }
+}
+
+@media(max-width:768px){
+    .booking_form .contain {
+        width: 100%;
+    }
+    
+    .booking_form .contain .close_icon i{
+        font-size: 16px;
+    }
+    
+    .booking_form form input, .booking_form form select {
+        padding: 6px;
+        border: 1px solid var(--gray);
+        border-radius: 2px;
+        font-size: 14px
+    }
+    
+    .booking_form form div label {
+        font-size: 14px
+    }
+    
+    .booking_form form input::placeholder {
+        font-size:12px;
+    }
+}
+/*End Booking Form*/
+
+

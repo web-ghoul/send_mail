@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/cssGhoul.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/fontawesome.min.css">
+    <title>Business Travel Bureau</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="contain grid jcs aic">
+                <h2 class="logo flex jcc aic pad10">Business Travel Bureau</h2>
+                <div class="booking flex jcsb aic g30 pad10">
+                    <h3>Online Booking Form</h3>
+                    <button id="add_button" class="flex jcc aic g5 primary"><i class="fa-solid fa-plus"></i>
+                        Add</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="logs">
+            <div class="contain grid jcs aic g30">
+                <div class="log grid jcs aic pad10 g10">
+                    <div class="log_info grid jcfs aic g5">
+                        <h4>Veronica Iceberg</h4>
+                        <h5>9/15/2023 6:27:29 PM</h5>
+                    </div>
+                    <div class="log_options flex jcfe aic g20">
+                        <div class="flex jcc aic">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                        <div class="flex jcc aic">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                        <div class="flex jcc aic">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking_form">
+            <div class="back"></div>
+            <form action="" class="contain grid jcs aifs pad20 g30">
+                <div class="head flex jcsb aic g30">
+                    <h3 class="flex jcfs aic g10">
+                        <div id="close_button" class="flex close_icon jcc aic">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        Online Booking Form
+                    </h3>
+                    <div class="buttons flex jcfe aic g5">
+                        <button id="cancel_button" type="button" class="secondary">Cancel</button>
+                        <button id="save_button" type="submit" class="flex jcc aic primary">Save</button>
+                    </div>
+                </div>
+                <div class="form_inputs grid jcs aic g30">
+                    <div class="time grid jcs aic g10">
+                        <label>Timestamp*</label>
+                        <input required type="date" placeholder="09/15/2023 06:39:40 PM">
+                    </div>
+                    <div class="closer_name grid jcs aic g10">
+                        <label for="closer_name">Closer Name</label>
+                        <select id="closer_name" required name="closer name" id="closer_name">
+                            <option value="Choose Closer Name"></option>
+                            <option value="name1">Name 1</option>
+                            <option value="name2">Name 2</option>
+                        </select>
+                    </div>
+                    <div class="customer_name grid jcs aic g10">
+                        <label for="customer_name">Customer Name</label>
+                        <input id="customer_name" required type="text" placeholder="Enter Customer Name">
+                    </div>
+                    <div class="customer_email grid jcs aic g10">
+                        <label for="customer_email">Customer Email</label>
+                        <input id="customer_email" required type="email" placeholder="Enter Customer Email">
+                    </div>
+                    <div class="hotel_name grid jcs aic g10">
+                        <label for="hotel_name">Hotel Name</label>
+                        <input id="hotel_name" required type="text" placeholder="Enter Hotel Name">
+                    </div>
+
+                    <div class="hotel_price grid jcs aic g10">
+                        <label for="hotel_price">Hotel Price</label>
+                        <input id="hotel_price" required type="number" placeholder="0">
+                    </div>
+                </div>
+            </form>
+        </section>
+        </div>
+    </main>
+
+    <script src="../JS/index.js"></script>
+</body>
+
+</html>
